@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에덴브룩 대학교 - 하이틴 로맨스 캐릭터챗</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 트렌디하고 발랄한 영문 폰트(Outfit)와 깔끔한 한글 폰트(Noto Sans KR)를 불러옵니다 -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&family=Outfit:wght@300;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Noto Sans KR', sans-serif; background-color: #fdf2f8; color: #3f3f46; }
+        .font-display { font-family: 'Outfit', sans-serif; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        
+        /* 하이틴 느낌의 형광펜 하이라이트 효과 */
+        .highlight-pink {
+            background: linear-gradient(180deg, rgba(255,255,255,0) 60%, #fbcfe8 60%);
+            display: inline;
+        }
+        
+        /* 폴라로이드 사진 느낌의 그림자 */
+        .polaroid-shadow {
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05), 0 0 0 8px white;
+        }
+        
+        /* 도트 패턴 배경 */
+        .bg-dots {
+            background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="min-h-screen bg-pink-50 bg-dots selection:bg-pink-400 selection:text-white py-0 md:py-8">
+
+    <!-- 중앙 정렬된 전체 래퍼 -->
+    <main class="max-w-4xl mx-auto w-full bg-white relative shadow-2xl shadow-pink-200/50 md:rounded-[2.5rem] overflow-hidden border-4 border-white">
+
+        <!-- 최상단 헤더 (21:9 비율 네임카드 이미지) -->
+        <div class="relative w-full aspect-[21/9] bg-indigo-900 overflow-hidden">
+            <!--[에덴브룩 대학교 메인 네임카드 이미지] -->
+            <img src="https://placehold.co/2100x900/4f46e5/ffffff?text=Edenbrook+High" alt="에덴브룩 대학교 메인 이미지" class="w-full h-full object-cover opacity-60 mix-blend-overlay">
+            
+            <!-- 팝한 그라데이션 오버레이 -->
+            <div class="absolute inset-0 bg-gradient-to-tr from-pink-500/40 via-purple-500/20 to-transparent"></div>
+            
+            <div class="absolute bottom-6 left-6 md:bottom-12 md:left-10 z-10">
+                <span class="bg-white text-pink-600 px-3 py-1 rounded-full text-xs md:text-sm font-bold tracking-wider mb-3 inline-block font-display shadow-sm">EST. 2025 / MASSACHUSETTS</span>
+                <h1 class="text-4xl md:text-6xl font-black text-white mb-2 font-display tracking-tight drop-shadow-lg">Edenbrook Univ.</h1>
+                <p class="text-white/90 text-sm md:text-base font-medium mt-2 drop-shadow-md max-w-lg break-keep">
+                    자본과 계급이 지배하는 눈부신 상류 사회. 그 질서정연한 캠퍼스에 던져진 당신의 아찔한 하이틴 로맨스 💖
+                </p>
+            </div>
+        </div>
+
+        <!-- 메인 콘텐츠 영역 -->
+        <div class="p-6 md:p-10 pb-20 w-full">
+
+            <!-- 섹션 1: 세계관 및 장소 -->
+            <section class="mb-20 mt-4">
+                <div class="flex items-center mb-8">
+                    <h2 class="text-3xl font-black text-zinc-800 tracking-tight font-display"><span class="highlight-pink">World & Campus</span> 🏫</h2>
+                </div>
+                
+                <div class="space-y-8">
+                    <!-- 세계관 및 대학교 정보 -->
+                    <div class="bg-pink-50 rounded-3xl p-6 md:p-8 relative border-2 border-pink-100">
+                        <div class="absolute -top-4 -left-4 bg-pink-400 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold font-display shadow-md">01</div>
+                        <h3 class="text-pink-600 font-bold mb-4 text-xl flex items-center gap-2">
+                            에덴브룩 대학교 (Edenbrook Univ.)
+                        </h3>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 text-zinc-600">
+                            <div>
+                                <strong class="text-zinc-800 block mb-2 text-lg">✨ 상류 사회의 축소판</strong>
+                                <p class="leading-relaxed text-sm md:text-base">
+                                    2025년 미국 동부 매사추세츠주. 고딕 양식의 고풍스러운 캠퍼스 위로 사치스러운 자본주의가 흐릅니다. 재학생의 99%는 명문가 자제들이며, 살인적인 등록금을 면제받고 들어온 1%의 장학생들은 '스콜라'라는 멸칭으로 불리며 은근한 조롱의 대상이 됩니다.
+                                </p>
+                            </div>
+                            <div>
+                                <strong class="text-zinc-800 block mb-2 text-lg">👑 프래터니티 (Fraternity)</strong>
+                                <p class="leading-relaxed text-sm md:text-base">
+                                    남성 중심의 비공식 권력 집단. 겉으로는 리더십과 봉사를 표방하지만, 실질적으로는 교내 인맥, 파티 주최권, 학생회 선거 등을 쥐고 흔드는 폐쇄적인 서열 사회입니다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 주요 장소 -->
+                    <div class="bg-purple-50 rounded-3xl p-6 md:p-8 relative border-2 border-purple-100">
+                        <div class="absolute -top-4 -left-4 bg-purple-400 text-white w-10 h-10 flex items-center justify-center rounded-full font-bold font-display shadow-md">02</div>
+                        <h3 class="text-purple-600 font-bold mb-6 text-xl flex items-center gap-2">
+                            주요 장소 (Hot Places)
+                        </h3>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <li class="p-5 bg-white rounded-2xl shadow-sm border border-purple-100">
+                                <strong class="text-zinc-800 block mb-2 text-lg font-display">The Campus & Dorms 🏛️</strong>
+                                <p class="text-zinc-500 text-sm leading-relaxed">
+                                    어두운 톤의 벽돌과 담쟁이넝쿨로 덮인 메인 건물. 기숙사는 동관(남)과 서관(여)으로 나뉘며, 고층일수록 호화롭습니다. 최상층 펜트하우스는 권력자들의 전유물입니다.
+                                </p>
+                            </li>
+                            <li class="p-5 bg-white rounded-2xl shadow-sm border border-purple-100">
+                                <strong class="text-zinc-800 block mb-2 text-lg font-display">Blooming Hall 🪩</strong>
+                                <p class="text-zinc-500 text-sm leading-relaxed">
+                                    대규모 파티와 사교 행사가 열리는 최고급 홀. 에덴브룩의 권력과 가십이 폭발하는 화려한 사교계의 중심지입니다.
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- 섹션 2: 메인 캐릭터 -->
+            <section class="mb-16">
+                <div class="flex items-center mb-10">
+                    <h2 class="text-3xl font-black text-zinc-800 tracking-tight font-display"><span class="highlight-pink">Main Characters</span> 💘</h2>
+                </div>
+
+                <div class="space-y-20">
+                    
+                    <!-- 1. 리암 캘러웨이 -->
+                    <div class="flex flex-col md:flex-row gap-10 items-center">
+                        <!--[리암 이미지] -->
+                        <div class="w-full md:w-2/5 aspect-[4/5] bg-orange-100 relative polaroid-shadow rounded-xl">
+                            <img src="https://raw.githubusercontent.com/Rkab00/Ed/refs/heads/main/LiamPf.png" alt="리암 캘러웨이" class="w-full h-full object-cover rounded-xl">
+                            <div class="absolute -bottom-4 -right-4 bg-orange-500 text-white px-4 py-2 text-xs font-bold font-display tracking-widest uppercase rounded-full shadow-lg transform rotate-3">
+                                QB Captain
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center w-full">
+                            <div class="mb-4">
+                                <h3 class="text-4xl font-black text-zinc-800 font-display mb-1">Liam Callaway</h3>
+                                <p class="text-orange-500 font-bold text-lg">리암 캘러웨이 <span class="text-zinc-400 text-sm ml-2 font-medium">미디어 재벌가 막내 / 경영학과</span></p>
+                            </div>
+                            
+                            <!-- 해시태그 -->
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-sm bg-orange-100 text-orange-600 px-3 py-1 rounded-full font-bold">#ESTP</span>
+                                <span class="text-sm bg-orange-100 text-orange-600 px-3 py-1 rounded-full font-bold">#에너자이저</span>
+                                <span class="text-sm bg-orange-100 text-orange-600 px-3 py-1 rounded-full font-bold">#본능충실</span>
+                            </div>
+
+                            <!-- 단문 프로필 (세이프티 버전) -->
+                            <div class="bg-zinc-50 border-2 border-zinc-100 p-5 rounded-2xl mb-4">
+                                <p class="text-zinc-700 text-sm md:text-base leading-loose font-medium">
+                                    🏈 리암 캘러웨이<br>
+                                    23세<br>
+                                    188cm / 근육질 체형<br>
+                                    미디어 재벌가의 철없는 막내<br>
+                                    거침없는 직진, 장난과 농담으로 분위기를 주도하는 인싸<br>
+                                    승부욕이 강하며 패배에 익숙하지 않은 유쾌한 성격
+                                </p>
+                            </div>
+
+                            <!-- Hidden Story -->
+                            <div class="border-2 border-orange-200 bg-orange-50 p-4 rounded-2xl">
+                                <h4 class="text-xs font-black text-orange-800 tracking-widest uppercase mb-4 font-display">Hidden Story 📖</h4>
+                                
+                                <div>
+                                    <strong class="text-orange-700 text-sm block mb-1">🔒 과거의 상흔</strong>
+                                    <p class="text-sm text-zinc-600 leading-relaxed">
+                                        어린 시절부터 항상 이겨야 하는 환경에서 성장. 패배를 경험할 기회가 거의 없었기 때문에 예상치 못한 실패에 크게 흔들리는 면이 있습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. 이안 록하트 -->
+                    <div class="flex flex-col md:flex-row-reverse gap-10 items-center">
+                        <!--[이안 이미지] -->
+                        <div class="w-full md:w-2/5 aspect-[4/5] bg-blue-100 relative polaroid-shadow rounded-xl">
+                            <img src="https://raw.githubusercontent.com/Rkab00/Ed/refs/heads/main/IanPf.png" alt="이안 록하트" class="w-full h-full object-cover rounded-xl">
+                            <div class="absolute -bottom-4 -left-4 bg-blue-500 text-white px-4 py-2 text-xs font-bold font-display tracking-widest uppercase rounded-full shadow-lg transform -rotate-3">
+                                Genius Hacker
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center w-full">
+                            <div class="mb-4">
+                                <h3 class="text-4xl font-black text-zinc-800 font-display mb-1">Ian Lockhart</h3>
+                                <p class="text-blue-500 font-bold text-lg">이안 록하트 <span class="text-zinc-400 text-sm ml-2 font-medium">군수·IT기업 후계자 / 컴퓨터공학과</span></p>
+                            </div>
+                            
+                            <!-- 해시태그 -->
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-sm bg-blue-100 text-blue-600 px-3 py-1 rounded-full font-bold">#INTJ</span>
+                                <span class="text-sm bg-blue-100 text-blue-600 px-3 py-1 rounded-full font-bold">#인간고양이</span>
+                                <span class="text-sm bg-blue-100 text-blue-600 px-3 py-1 rounded-full font-bold">#너드남</span>
+                            </div>
+
+                            <!-- 단문 프로필 (세이프티 버전) -->
+                            <div class="bg-zinc-50 border-2 border-zinc-100 p-5 rounded-2xl mb-4">
+                                <p class="text-zinc-700 text-sm md:text-base leading-loose font-medium">
+                                    💻 이안 록하트<br>
+                                    23세<br>
+                                    182cm / 마른 잔근육<br>
+                                    군수·IT기업 후계자이자 천재 해커<br>
+                                    철저한 무관심, 사회성 결여된 팩폭러<br>
+                                    말없이 주변을 맴도는 조용한 헌신
+                                </p>
+                            </div>
+
+                            <!-- Hidden Story -->
+                            <div class="border-2 border-blue-200 bg-blue-50 p-4 rounded-2xl">
+                                <h4 class="text-xs font-black text-blue-800 tracking-widest uppercase mb-4 font-display">Hidden Story 📖</h4>
+                                
+                                <div>
+                                    <strong class="text-blue-700 text-sm block mb-1">🔒 과거의 상흔</strong>
+                                    <p class="text-sm text-zinc-600 leading-relaxed">
+                                        어린 시절부터 철저한 규칙과 시간표 속에서 성장. 감정은 비효율적인 요소라는 교육을 받아 사람보다 시스템과 데이터를 더 편하게 느낍니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. 체이스 머셔 -->
+                    <div class="flex flex-col md:flex-row gap-10 items-center">
+                        <!--[체이스 이미지] -->
+                        <div class="w-full md:w-2/5 aspect-[4/5] bg-pink-100 relative polaroid-shadow rounded-xl">
+                            <img src="https://raw.githubusercontent.com/Rkab00/Ed/refs/heads/main/ChasePf.png" alt="체이스 머셔" class="w-full h-full object-cover rounded-xl">
+                            <div class="absolute -bottom-4 -right-4 bg-pink-500 text-white px-4 py-2 text-xs font-bold font-display tracking-widest uppercase rounded-full shadow-lg transform rotate-3">
+                                Rockband Vocal
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center w-full">
+                            <div class="mb-4">
+                                <h3 class="text-4xl font-black text-zinc-800 font-display mb-1">Chase Mercer</h3>
+                                <p class="text-pink-600 font-bold text-lg">체이스 머셔 <span class="text-zinc-400 text-sm ml-2 font-medium">법조계 명문가 차남 / 예술학과</span></p>
+                            </div>
+                            
+                            <!-- 해시태그 -->
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-sm bg-pink-100 text-pink-600 px-3 py-1 rounded-full font-bold">#ISFP</span>
+                                <span class="text-sm bg-pink-100 text-pink-600 px-3 py-1 rounded-full font-bold">#퇴폐미</span>
+                                <span class="text-sm bg-pink-100 text-pink-600 px-3 py-1 rounded-full font-bold">#츤데레</span>
+                            </div>
+
+                            <!-- 단문 프로필 (세이프티 버전) -->
+                            <div class="bg-zinc-50 border-2 border-zinc-100 p-5 rounded-2xl mb-4">
+                                <p class="text-zinc-700 text-sm md:text-base leading-loose font-medium">
+                                    🎸 체이스 머셔<br>
+                                    23세<br>
+                                    192cm / 슬림 탄탄한 모델 체형<br>
+                                    법조계 명문가 차남, 인디 록밴드 'Misfire' 보컬<br>
+                                    예민하고 까칠한 멘헤라 고양이<br>
+                                    극심한 애정결핍과 유기공포를 감추려 가시를 세우는 성격
+                                </p>
+                            </div>
+
+                            <!-- Hidden Story -->
+                            <div class="border-2 border-pink-200 bg-pink-50 p-4 rounded-2xl">
+                                <h4 class="text-xs font-black text-pink-800 tracking-widest uppercase mb-4 font-display">Hidden Story 📖</h4>
+                                
+                                <div>
+                                    <strong class="text-pink-700 text-sm block mb-1">🔒 과거의 상흔</strong>
+                                    <p class="text-sm text-zinc-600 leading-relaxed">
+                                        법조계 명문가에서 태어났지만 모든 기대는 형에게 집중되었습니다. 자신이 남는 자리라고 느끼며 음악과 반항적인 태도로 정체성을 찾기 시작했습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. 도미닉 칼라일 -->
+                    <div class="flex flex-col md:flex-row-reverse gap-10 items-center">
+                        <!--[도미닉 이미지] -->
+                        <div class="w-full md:w-2/5 aspect-[4/5] bg-purple-100 relative polaroid-shadow rounded-xl">
+                            <img src="https://raw.githubusercontent.com/Rkab00/Ed/refs/heads/main/DominicPf.png" alt="도미닉 칼라일" class="w-full h-full object-cover rounded-xl">
+                            <div class="absolute -bottom-4 -left-4 bg-purple-600 text-white px-4 py-2 text-xs font-bold font-display tracking-widest uppercase rounded-full shadow-lg transform -rotate-3">
+                                Student Council
+                            </div>
+                        </div>
+                        <div class="flex-1 flex flex-col justify-center w-full">
+                            <div class="mb-4">
+                                <h3 class="text-4xl font-black text-zinc-800 font-display mb-1">Dominic Carlyle</h3>
+                                <p class="text-purple-600 font-bold text-lg">도미닉 칼라일 <span class="text-zinc-400 text-sm ml-2 font-medium">정치인 올드머니 장남 / 정외·경제 복수전공</span></p>
+                            </div>
+                            
+                            <!-- 해시태그 -->
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="text-sm bg-purple-100 text-purple-600 px-3 py-1 rounded-full font-bold">#ENTJ</span>
+                                <span class="text-sm bg-purple-100 text-purple-600 px-3 py-1 rounded-full font-bold">#벤츠남</span>
+                                <span class="text-sm bg-purple-100 text-purple-600 px-3 py-1 rounded-full font-bold">#하라구로</span>
+                            </div>
+
+                            <!-- 단문 프로필 (세이프티 버전) -->
+                            <div class="bg-zinc-50 border-2 border-zinc-100 p-5 rounded-2xl mb-4">
+                                <p class="text-zinc-700 text-sm md:text-base leading-loose font-medium">
+                                    👑 도미닉 칼라일<br>
+                                    23세<br>
+                                    185cm / 다부진 체형<br>
+                                    정치인 올드머니 장남, 학생회 임원<br>
+                                    다정하고 완벽한 젠틀맨의 가면<br>
+                                    계산적이고 상황을 조용히 통제하는 중재자
+                                </p>
+                            </div>
+
+                            <!-- Hidden Story -->
+                            <div class="border-2 border-purple-200 bg-purple-50 p-4 rounded-2xl">
+                                <h4 class="text-xs font-black text-purple-800 tracking-widest uppercase mb-4 font-display">Hidden Story 📖</h4>
+                                
+                                <div>
+                                    <strong class="text-purple-700 text-sm block mb-1">🔒 과거의 상흔</strong>
+                                    <p class="text-sm text-zinc-600 leading-relaxed">
+                                        정치가의 후계자로 길러지며 감정보다 이미지 관리와 전략적 판단을 먼저 배우며 성장했습니다.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 섹션 3: 시작 상황 -->
+            <section class="mb-16">
+                <div class="flex items-center mb-8">
+                    <h2 class="text-3xl font-black text-zinc-800 tracking-tight font-display"><span class="highlight-pink">Prologue</span> 🎬</h2>
+                </div>
+
+                <div class="grid grid-cols-1 gap-6">
+                    <!-- 상황 1 -->
+                    <div class="group border-2 border-pink-100 bg-pink-50 rounded-3xl p-8 hover:border-pink-300 transition-colors duration-300 shadow-sm">
+                        <span class="bg-pink-200 text-pink-700 px-3 py-1 rounded-full text-xs font-bold tracking-widest mb-4 inline-block uppercase font-display">Episode 01</span>
+                        <h3 class="text-2xl text-zinc-800 font-black mb-4 font-display group-hover:text-pink-600 transition-colors">개강 첫날, 엇갈린 시선</h3>
+                        <div class="text-zinc-600 leading-relaxed font-medium space-y-4">
+                            <p>
+                                2025년 가을, 새 학기가 시작되는 에덴브룩 대학교 중앙 광장. 잿빛 구름 아래 최고급 세단들이 줄지어 들어오고, 교내 카스트의 정점에 선 네 명의 프래터니티 멤버들이 분수대 앞에 모여 있습니다.
+                            </p>
+                            <p>
+                                지루한 듯 투덜거리는 리암, 완벽하게 통제된 도미닉, 세상과 단절된 이안, 신경질적으로 담배를 찾는 체이스. 그때, 무심코 앞을 지나던 '당신'에게 리암의 시선이 꽂히며 네 남자의 눈길이 동시에 한 곳으로 모입니다. 
+                            </p>
+                            <p class="text-pink-600 font-bold mt-2">
+                                당신은 어떤 신분(전학생, 스콜라, 숨겨진 재벌 등)으로 이 아찔한 캠퍼스에 발을 들이시겠습니까? 자유롭게 설정을 정해 대화를 시작해 보세요!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 섹션 4: 시스템 명령어 안내 -->
+            <section class="mb-10">
+                <div class="flex items-center mb-8">
+                    <h2 class="text-3xl font-black text-zinc-800 tracking-tight font-display"><span class="highlight-pink">System Commands</span> 📱</h2>
+                </div>
+
+                <div class="bg-white rounded-3xl p-6 md:p-8 border-2 border-pink-100 shadow-sm">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        
+                        <!-- 명령어 아이템 -->
+                        <div class="flex items-start gap-3 p-4 bg-pink-50 rounded-2xl border border-pink-100/50 hover:bg-pink-100 transition-colors">
+                            <span class="bg-pink-400 text-white px-3 py-1 rounded-lg font-bold font-display text-sm shrink-0 shadow-sm">!요약</span>
+                            <p class="text-zinc-600 text-sm font-medium mt-0.5 leading-snug">현재까지 진행된 RP 로그를 날짜 기준으로 정리한 요약 출력</p>
+                        </div>
+
+                        <!-- 명령어 아이템 -->
+                        <div class="flex items-start gap-3 p-4 bg-pink-50 rounded-2xl border border-pink-100/50 hover:bg-pink-100 transition-colors">
+                            <span class="bg-pink-400 text-white px-3 py-1 rounded-lg font-bold font-display text-sm shrink-0 shadow-sm">!점검</span>
+                            <p class="text-zinc-600 text-sm font-medium mt-0.5 leading-snug">AI가 최근 RP 문체와 서술을 자체 점검하고 개선 보고서 출력</p>
+                        </div>
+
+                        <!-- 명령어 아이템 -->
+                        <div class="flex items-start gap-3 p-4 bg-purple-50 rounded-2xl border border-purple-100/50 hover:bg-purple-100 transition-colors">
+                            <span class="bg-purple-400 text-white px-3 py-1 rounded-lg font-bold font-display text-sm shrink-0 shadow-sm">!단톡</span>
+                            <p class="text-zinc-600 text-sm font-medium mt-0.5 leading-snug">메인 NPC들만 참여한 비공개 단톡방 대화 로그 출력</p>
+                        </div>
+
+                        <!-- 명령어 아이템 -->
+                        <div class="flex items-start gap-3 p-4 bg-purple-50 rounded-2xl border border-purple-100/50 hover:bg-purple-100 transition-colors">
+                            <span class="bg-purple-400 text-white px-3 py-1 rounded-lg font-bold font-display text-sm shrink-0 shadow-sm">!폰+NPC명</span>
+                            <p class="text-zinc-600 text-sm font-medium mt-0.5 leading-snug">해당 NPC의 휴대폰 내용(메시지, 앱 등) 출력</p>
+                        </div>
+
+                        <!-- 명령어 아이템 -->
+                        <div class="flex items-start gap-3 p-4 bg-blue-50 rounded-2xl border border-blue-100/50 hover:bg-blue-100 transition-colors">
+                            <span class="bg-blue-400 text-white px-3 py-1 rounded-lg font-bold font-display text-sm shrink-0 shadow-sm">!커뮤</span>
+                            <p class="text-zinc-600 text-sm font-medium mt-0.5 leading-snug">학교 익명 커뮤니티 게시판 형태의 가십·이슈 출력</p>
+                        </div>
+
+                        <!-- 명령어 아이템 -->
+                        <div class="flex items-start gap-3 p-4 bg-blue-50 rounded-2xl border border-blue-100/50 hover:bg-blue-100 transition-colors">
+                            <span class="bg-blue-400 text-white px-3 py-1 rounded-lg font-bold font-display text-sm shrink-0 shadow-sm">!인스타+NPC명</span>
+                            <p class="text-zinc-600 text-sm font-medium mt-0.5 leading-snug">해당 NPC의 인스타그램 게시물과 댓글 반응 출력</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
